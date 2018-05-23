@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.p4parttime</groupId>
-	<artifactId>P4parttime-RegisterUser-Service</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>P4pDemoService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>P4parttime-RegisterUser-Service</name>
-	<description>User Registration in P4parttime</description>
+	<name>P4pDemoService</name>
+	<description>Spring Config Server</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -27,10 +27,6 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
@@ -44,14 +40,6 @@
 			<artifactId>spring-cloud-config-client</artifactId>
 			<version>2.0.0.BUILD-SNAPSHOT</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client -->
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-actuator</artifactId>
-    <version>2.0.2.RELEASE</version>
-</dependency>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-netflix-eureka-server</artifactId>
@@ -69,13 +57,4 @@
 	</build>
 
 
-	<dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-dependencies</artifactId>
-            <version>Finchley.RC1</version>
-        </dependency>
-    </dependencies>
-</dependencyManagement>
 </project>
