@@ -21,7 +21,7 @@ public class RegistrationController {
 	}
 	@RequestMapping("/hello")
 	private String Hello() {
-		return "hello fdfdf kp";
+		return "P4parttime serivce call from Register Microservice";
 	}
 	
 	@RequestMapping("/users")
