@@ -1,0 +1,10 @@
+Ribbon Offers :
+  1:To store server addresses
+  2: Server Freshness check (ping)
+  3:For Server selection criteria ( to list rules)
+  
+  Activate Ribbon in code:
+  
+   Either use @LoadBalanced   or @RibbonClient
+   
+   
