@@ -29,10 +29,14 @@ public class RegistrationController {
 	
 	@RequestMapping("/demo")
 	private String Hello() {
-		String data=restTemplate.getForObject("http://localhost:8090/hello", String.class );
+		String data=restTemplate.getForObject("http://myapp/hello", String.class );
 		return data;
 	}
 	
-	
+	@RequestMapping("/demo1")
+	private String Hello1() {
+		
+		return "hello1";
+	}
 
 }

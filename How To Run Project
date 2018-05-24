@@ -1,0 +1,27 @@
+Application Run steps:
+
+1: First Run P4pServiceDiscovery (EUreka Server)
+2: Then Run P4pConServer ( Spring Config Server used for central repository for location application properties)
+3: Then Run P4pZuulGateway (Zuul gateway for url proxy)
+4 Run CLient Microservices ( P4pDemoservice,P4parttime-RegisterUser-Service etc)
+
+
+How to call microservices?
+ User zuul gateway url and port + service_id + /method name
+ 
+ eg: http://localhost:8086/myapp/hello
+             
+             *8086 --port of zuul gateway
+              myapp --service id defined in eureka ( Representing P4parttime-RegisterUser-service)
+              hello --method in P4parttime-RegisterUser-service 
+              
+ FOr loading eureka server:
+   localhost:8761    ----check application.properties of P4pserviceDiscovery 
+   
+   Internal Microservices calling--
+   
+   we can call a service from another service using it service id
+   
+    eg: shown in P4pDemoserive project, which tries to call a method for P4parttime-RegisterUser-service
+    
+    
