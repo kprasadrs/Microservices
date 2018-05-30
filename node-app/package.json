@@ -1,0 +1,30 @@
+ 
+
+{
+
+  "name": "node-app",
+
+  "version": "1.0.0",
+
+  "license":"MIT",
+
+  "main" :"Server.js",
+
+ 
+
+  "scripts": {
+
+    "start": "node Server.js"
+
+  },
+
+  "dependencies": {
+
+    "express": "~4.16.1"
+
+  }
+
+
+}
+
+ 
